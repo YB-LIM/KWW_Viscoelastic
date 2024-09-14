@@ -13,7 +13,8 @@ Stretched_EXP.for      : UCREEPNETWORK subroutine <br>
 Stretched_EXP_Prony.py : Python script to generate visco_table.inp that contains Prony parameter table
 
 # Validation
-![Fig4](https://github.com/user-attachments/assets/7272372e-b645-4264-9370-16db8f86dda9)
+![Fig4](https://github.com/user-attachments/assets/65f06437-bf54-4b8b-b5fa-9e9e77fa82b7)
+
 
 # References
 [1] Abaqus Documentation, 2024, Dassault Systèmes Simulia Corp., Providence, RI, USA. <br>
