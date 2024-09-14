@@ -2,7 +2,7 @@
 # A Python script to generate Prony series table for stretched exponential model
 # 
 # AUTHOR  : Youngbin LIM
-# CONTACT : Youngbin.LIM@3ds.com
+# CONTACT : lyb0684@naver.com
 #
 import numpy as np
 from scipy.special import factorial, gamma
