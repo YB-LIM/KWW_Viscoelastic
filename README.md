@@ -6,6 +6,9 @@ Written on Intel® Fortran Version 19.0.5 (Abaqus 2023) <br><br>
 AUTHOR: Youngbin LIM<br>
 CONTACT: lyb0684@naver.com
 
+# Model description
+Please refer to the Linkedin post: https://www.linkedin.com/pulse/stop-using-prony-series-try-kww-model-youngbin-lim-xqudc/?trackingId=VSjepEgSQvi7Q0JqFpF4IQ%3D%3D
+
 # File description
 Relaxation_Prony.inp   : Input file for stress relaxation test. Run this input after generating visco_table.inp with Python script<br>
 Relaxation_User.inp    : Input file for stress relaxation test. Run this input with user subroutine<br>
