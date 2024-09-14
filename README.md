@@ -1,6 +1,6 @@
 # KWW_Viscoelastic
 UCREEPNETWORK subroutine and equivalent Python script to model KWW viscoelasticity <br><br>
-Written on Pyhton 3 <br> 
+Written on Python 3 <br> 
 Written on Intel® Fortran Version 19.0.5 (Abaqus 2023) <br><br>
 
 AUTHOR: Youngbin LIM<br>
