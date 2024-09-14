@@ -2,7 +2,7 @@ C*******************************************************************************
 C     UCREEPNETWORK subroutine for stretched exponential model (KWW model)
 C   
 C     AUTHOR: Youngbin LIM
-C     CONTACT: Youngbin.LIM@3ds.com
+C     CONTACT: lyb684@naver.com
 C
 C**********************************************************************************************
 C     PROPS(1)       : Instantaneous elastic modulus in equilibrium network
