@@ -9,7 +9,7 @@ CONTACT: lyb0684@naver.com
 # File description
 Relaxation_Prony.inp   : Input file for stress relaxation test. Run this input after generating visco_table.inp with Python script<br>
 Relaxation_User.inp    : Input file for stress relaxation test. Run this input with user subroutine<br>
-Stretched_EXP.for      : UCREEPNETWORK subroutine
+Stretched_EXP.for      : UCREEPNETWORK subroutine <br>
 Stretched_EXP_Prony.py : Python script to generate visco_table.inp that contains Prony parameter table
 
 # Validation
