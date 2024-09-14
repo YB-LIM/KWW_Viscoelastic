@@ -133,7 +133,7 @@ Set-4, 3, 3, <Displacement>
 ** STEP: Hold
 ** 
 *Step, name=Hold, nlgeom=YES, inc=10000
-*Visco, cetol=1e-06
+*Visco, cetol=1e-07
 0.1, <Step_Time>, 1E-10, 0.1
 ** 
 ** OUTPUT REQUESTS
