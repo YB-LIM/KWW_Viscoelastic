@@ -69,7 +69,7 @@ C
      *           ir_creep_press      = 11 )
 C
       parameter( ic_creep_material_name = 1 )
-      parameter(ZERO=0.D0, ONE=1.D0, TOL=1.D-4)
+      parameter(ZERO=0.D0, ONE=1.D0, THREE=3.D0, TOL=1.D-5, TTOL=1.D-15)
 C
       dimension 
      *   statev(nstatv),
@@ -93,10 +93,21 @@ C
 C     
 C     Assign necessary variable
 C
-      sig_qtild = r_array(ir_creep_qtild)
-      dt        = r_array(ir_creep_timeinc)
-      detF      = r_array(ir_creep_detf)
-      time      = r_array(ir_creep_step_time)   ! Step time
+      sig_qtild  = r_array(ir_creep_qtild)
+      dt         = r_array(ir_creep_timeinc)
+      detF       = r_array(ir_creep_detf)
+      stime      = r_array(ir_creep_step_time)   ! Step time
+      EI1        = r_array(ir_creep_inv1)
+      time_shift = statev(1)
+C
+C     Start to measure creep time only when the deformation is non-zero
+C
+      t_check = ABS(EI1 - THREE)/THREE
+      IF ( t_check.LT.TTOL ) THEN
+        statev(1) = stime
+      ELSE IF ( t_check.GE.TTOL ) THEN
+        ctime = stime - time_shift
+      END IF
 C
 C     Calculate value that appear frequently 
 C
@@ -109,7 +120,7 @@ C
         CALL XIT
       END IF
 C
-      t_pow = (time/tau + TOL)**(Beta - ONE) ! TOL is added to prevent division by zero
+      t_pow = (ctime/tau + TOL)**(Beta - ONE) ! TOL is added to prevent division by zero
 C     
 C     Define euiquivalent creep strain increment
 C
