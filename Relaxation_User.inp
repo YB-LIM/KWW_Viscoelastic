@@ -93,6 +93,9 @@ Moduli = int(Moduli)
  <C10>, <D1>
 *Viscoelastic, Nonlinear, NETWORKID=1, SRATIO=<g>, LAW=USER, Properties=5
  <E0>, <g>, <Beta>, <tau>, <Moduli>
+*Depvar
+1,
+1, TSHIFT, "Time shift"
 ** 
 ** BOUNDARY CONDITIONS
 ** 
