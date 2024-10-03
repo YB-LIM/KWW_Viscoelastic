@@ -9,6 +9,8 @@ CONTACT: lyb0684@naver.com
 # Model description
 Please refer to the Linkedin post: https://www.linkedin.com/pulse/stop-using-prony-series-try-kww-model-youngbin-lim-xqudc/?trackingId=VSjepEgSQvi7Q0JqFpF4IQ%3D%3D
 
+** UCREEPNETWORK is applicable for small strain only
+
 # File description
 Relaxation_Prony.inp   : Input file for stress relaxation test. Run this input after generating visco_table.inp with Python script<br>
 Relaxation_User.inp    : Input file for stress relaxation test. Run this input with user subroutine<br>
